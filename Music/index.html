@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+<script type="module" src="assets/js/init.js"></script>
+<script type="module" src="assets/js/authcheck.js"></script>
+<style>
+        /* Apply a fade-in animation to all elements */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        * {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Rock Politics</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/userpass.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/itemrp.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+ <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Rock Politics</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+
+                    <!-- ***** Serach Start ***** -->
+                    <div class="search-input">
+                      <form id="search" action="#">
+                        <input type="text" placeholder="Type Something" id='searchText' name="searchKeyword" onkeypress="handle" />
+                        <i class="fa fa-search"></i>
+                      </form>
+                    </div>
+                    <!-- ***** Serach Start ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                      <li class="scroll-to-section"><a href="#services">Features</a></li>
+                      <li class="scroll-to-section"><a href="#courses">Shop</a></li>
+                      <li class="scroll-to-section"><a href="#events" onclick="showPasswordForm(event)">Resources</a></li>
+                      <li class="scroll-to-section"><a href="#contact">Register Now!</a></li>
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+
+  <div class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="item item-1">
+              <div class="header-text">
+                <span class="category">Welcome</span>
+<!-- ***** Animation Start ***** -->
+<h2 id="logoText" style="margin: 0; opacity: 0; animation: fadeText 5s infinite;">Rock Politics</h2>
+<!-- ***** Logo End ***** -->
+
+<!-- Inline CSS for animation -->
+<style>
+    @keyframes fadeText {
+        0% {
+            opacity: 0;
+            transform: translateY(-50%);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(50%);
+        }
+    }
+</style>
+
+<!-- JavaScript to toggle between texts -->
+<script>
+    const logoText = document.getElementById('logoText');
+    let textIndex = 0;
+    const texts = ['Rock Politics', 'By Ashutosh','1.99$/month'];
+
+    setInterval(() => {
+        logoText.textContent = texts[textIndex];
+        textIndex = (textIndex + 1) % texts.length;
+    }, 5000); // Change text every 5 seconds (5000 milliseconds)
+</script>
+<p>
+    <a href="index.html" class="logo" style="position: relative; display: inline-block; text-decoration: none; color: black;">
+        <img src="assets/images/logo.png" id="logoImage" style="width: 80px; opacity: 0; animation: spinFade 4s infinite;">
+    </a>
+</p>
+
+<!-- Inline CSS for the image animation -->
+<style>
+    @keyframes spinFade {
+        0% {
+            opacity: 0;
+            transform: translateX(-100%) rotate(0deg);
+        }
+        25% {
+            opacity: 1;
+            transform: translateX(0%) rotate(360deg);
+        }
+        75% {
+            opacity: 1;
+            transform: translateX(0%) rotate(360deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(100%) rotate(720deg);
+        }
+    }
+</style>
+               <div class="buttons">
+                  <div class="main-button">
+                    <a href="#">Swipe 👉</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> What is Rock Politics?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-2">
+              <div class="header-text">
+                <span class="category">Introduction</span>
+                <h2>What is Rock Politics?</h2>
+                <p>Introducing Rock Politics: the all-in-one guitar platform by Ashutosh Bhattarai. Rock Politics goes beyond curriculum, instructionals, and techniques, 
+                   offering expert guidance and one-on-one sessions to help you find your true sound.</p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#">Swipe 👉</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item item-3">
+              <div class="header-text">
+                <span class="category">A win-win for Rock & Roll</span>
+                <h2>Everything, Rock & Roll</h2>
+                <p>Everything we do here fuels the restoration of Rock music. You can enroll in our rigorous courses to master the guitar and
+                   learn music theory or also buy a cool zakk wylde sweatshirt. With every purchase, you're helping someone else get their guitar 
+                   cables – a truly evangelist brand.
+                 </p>
+                <div class="buttons">
+                  <div class="main-button">
+                    <a href="#">Swipe 👉</a>
+                  </div>
+                  <div class="icon-button">
+                    <a href="#"><i class="fa fa-play"></i> What is Rock Politics?</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="services section" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-01.png" alt="Guitar Lessons">
+            </div>
+            <div class="main-content">
+              <h4>Guitar Lessons</h4>
+              <p>Curriculum, Technique Fundamentals, Tabulatures, Song Lessons,LickLibraries. All in one place</p>
+              <div class="main-button">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-02.png" alt="Music Theory">
+            </div>
+            <div class="main-content">
+              <h4>Music Theory</h4>
+              <p>Fundamentals to Intermediate Theory lessons, Practical approach, Improvisations, Rhythm.</p>
+              <div class="main-button">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="service-item">
+            <div class="icon">
+              <img src="assets/images/service-03.png" alt="web experts">
+            </div>
+            <div class="main-content">
+              <h4>Expert Feedback</h4>
+              <p>Track your progress, get realtime feedback and continue</p>
+              <div class="main-button">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section about-us">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-1">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  Where shall we begin?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Rock Politics</strong> is a highly dynamic course, The subscription features a season-based learning approach where the contents change periodically,
+                  and the lesson plans are carefully curated to efficiently boost your playing.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How do we work together?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can either <strong>Purchase</strong> and enroll in a course, <strong>Subscribe</strong> to RP Dynamic Pro Lessons, or even book a private <strong> one-on-one </strong>session. 
+                  Your progress is tracked so you can get realtime feedback. We even offer a free section in the Resources tab that everyone has
+                  access to.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Why is RP the best?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  RP is an all-in-one platform,a one stop learning hub. There are thousands of guitar courses from hundreds of guitarists online but none have uniformity and universality,
+they emphasize on what is easier for them to teach, not what lays a solid foundation for your playing. 
+Our <a href="#events">plans<a> are affordable and flexible, you can cancel any moment. We make you put in real work, akin to a real course curriculum.
+              </div>
+            </div>
+</div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How do I access the Resources tab?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                <div class="accordion-body"> The Resources tab features two sections: subscription-based and free. All Registered users can request a
+                password by sending a message <a href="#contact">here</a> using the same email they signed up with.
+                Anonymous or unregistered emails can inquire but will not receive passwords.
+                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <div class="section-heading">
+            <h6>About Us</h6>
+            <h2>Why Rock Politics?</h2>
+             <p>
+            <div style="width: 340px; height: 170px; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin: 0 auto; border: 5px solid #3498db;">
+                <iframe src="https://www.youtube.com/embed/Fa1p_DE7_5g?si=Ss16hUXGMP8qMj-l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 100%; height: 100%; border: 0;"></iframe>
+            </div>
+        </p>  
+              <div class="main-button">
+              <a href="#">Discover More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section courses" id="courses">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-heading">
+          <h6>Recent Products</h6>
+          <h2>Shop</h2>
+        </div>
+      </div>
+    </div>
+    <ul class="event_filter">
+      <li>
+        <a class="is_active" href="#!" data-filter="*">Show All</a>
+      </li>
+      <li>
+        <a href="#!" data-filter=".design">Guitar Lessons</a>
+      </li>
+      <li>
+        <a href="#!" data-filter=".development">Theory</a>
+      </li>
+      <li>
+        <a href="#!" data-filter=".wordpress">Song Tabulatures</a>
+      </li>
+    </ul>
+    <div class="row event_box">
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="https://forms.gle/d6VL5TBHw9hKfbD28"><img src="assets/images/course-01.jpg" alt=""></a>
+            <span class="category">Guitar Course</span>
+            <span class="price"><h6><em>$</em>25</h6></span>
+          </div>
+          <div class="down-content">
+            <span class="author">Ashutosh Bhattarai</span>
+            <h4>Rock Politics</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
+        <div class="events_item">
+          <div class="thumb">
+            <a href="https://forms.gle/d6VL5TBHw9hKfbD28"><img src="assets/images/course-02.jpg" alt=""></a>
+            <span class="category">Tabulature</span>
+            <span class="price"><h6><em>$</em>16</h6></span>
+          </div>
+          <div class="down-content">
+            <span class="author">Ashutosh Bhattarai</span>
+            <h4>25 Rock Licks</h4>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</section> 
+
+<div class="section events" id="events">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <div class="section-heading">
+          <h6>Resources</h6>
+          <h2>RP Exclusives</h2>
+        </div>
+
+<!-- Password entry form -->
+<div class="password-section" id="password-section">
+ <form id="password-form" onsubmit="return checkPassword()">
+    <label for="password">Enter Password:</label>
+<p align=justify style="font-size:15px;"> You can use the password provided with your RP Purchase to continue. 
+RP Exclusive subscription offers hyper affordable pricing at<br>
+<div align="justify" style="margin: 0 auto; text-align: center;">
+  &nbsp;<br>
+  &nbsp;$1.99 / 1 Month<br>
+  $11.49 / 6 Months<br>
+  $22.99 / 12 Months &nbsp;
+</div>
+</p>
+    <input type="password" id="password" name="password" required>
+    <button type="submit">Login</button>
+  </form>
+</div>
+        <!-- Content section (initially hidden) -->
+        <div class="content-section" id="content-section" style="display: none;">
+          <div class="col-lg-12 col-md-6">
+            <div class="item special-color">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/event-01.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <div align=center><span class="category"><i class="fa-solid fa-bag-shopping"></i>&nbsp; Subscription+</span><div>
+                      <h4 align=center style="color: white;">RP Dynamic Pro Lessons</h4>
+                    </ul>
+                  <a id="protected-link" href="#"><i class="fa fa-angle-right"></i></a>
+                 </div>
+              </div>
+            </div>
+          </div>
+         
+        <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/event-02.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <span class="category"><i class="fa-solid fa-play"></i>&nbsp; Video Lesson</span>
+                      <h4>Solo Excercises Licks</h4>
+                    </li>
+                    <li>
+                      <span>Date:</span>
+                      <h6>16 Feb 2036</h6>
+                    </li>
+                    <li>
+                      <span>Duration:</span>
+                      <h6>22 Hours</h6>
+                    </li>
+                    <li>
+                      <span>Price:</span>
+                      <h6>Free</h6>
+                    </li>
+                  </ul>
+                  <a href="video.html"><i class="fa fa-angle-right"></i></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-lg-12 col-md-6">
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="image">
+                    <img src="assets/images/event-03.jpg" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul>
+                    <li>
+                      <span class="category"><i class="fa-solid fa-file-lines"></i> &nbsp; Tabulatures</span>
+                      <h4>Guitar Notations</h4>
+                    </li>
+                    <li>
+                      <span>Date:</span>
+                      <h6>24 Feb 2036</h6>
+                    </li>
+                    <li>
+                      <span>Duration:</span>
+                      <h6>30 Hours</h6>
+                    </li>
+                    <li>
+                      <span>Price:</span>
+                      <h6>Free</h6>
+                    </li>
+                  </ul>
+                  <a href="tiles.html"><i class="fa fa-angle-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+   <div class="contact-us section" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6  align-self-center">
+          <div class="section-heading">
+            <h6>Contact Us</h6>
+            <h2>Feel free to write to us</h2>
+            <p>Feel free to send us any message or feedback. 
+           Ask whatever you want to—using the email of your choice.
+           We'll get back at the weirdest of queries, even anonymous ones. 😁</p>
+            <div class="special-offer">
+              <span class="offer">off<br><em>15%</em></span>
+              <h6>Valid till: <em>November 17 2024</em></h6>
+              <h4>Course +RPS<em>15%</em>off</h4>
+              <a href="#courses"><i class="fa-solid fa-bag-shopping"></i></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="contact-us-content">
+            <form id="contact-form" method="post">
+              <div class="row">
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="name" name="name" id="name" placeholder="Your Name..." autocomplete="on" required>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your E-mail..." required="">
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                  </fieldset>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                    <button type="submit" id="form-submit" class="orange-button">Send Message Now</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+
+  var formData = new FormData(document.getElementById("contact-form"));
+
+  fetch("https://script.google.com/macros/s/AKfycbwN6rB5uvDuqze3mPhPk2kJ69Df826qCZsCx_hFfb4GWWX_E212OYWy3Oymel4VKxeK/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => {
+    if (response.ok) {
+      alert("Form submitted successfully!");
+      document.getElementById("contact-form").reset(); // Optional: Reset the form after submission
+    } else {
+      alert("Form submission failed!");
+    }
+  })
+  .catch(error => {
+    alert("An error occurred while submitting the form.");
+    console.error('Error:', error);
+  });
+});
+</script>
+
+<footer>
+    <div class="container">
+      <div class="col-lg-12">
+        <p>Copyright © 2025 Rock Politics Organization. All rights reserved. &nbsp;&nbsp;&nbsp;</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/counter.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/mlock.js"></script>
+  <script src="assets/js/userpass.js"></script>
+    
+</body>
+</html>
